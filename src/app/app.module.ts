@@ -9,6 +9,7 @@ import { FooterComponent } from './navegacao/footer/footer.component';
 import { SobreComponent } from './institucional/sobre/sobre.component';
 import { ContatoComponent } from './institucional/contato/contato.component';
 import { rootRouterConfig } from './app.router';
+import { ProdutoService } from './services/produto.services';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { rootRouterConfig } from './app.router';
     [RouterModule.forRoot(rootRouterConfig, {useHash:false})]
   ],
   providers: [
+    ProdutoService,
     {provide:APP_BASE_HREF, useValue:'/teste'}
   ],
   bootstrap: [AppComponent]
