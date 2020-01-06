@@ -1,7 +1,7 @@
 <div *ngFor="let produto of produtos" >
     <p>{{produto.id}}</p>
     <p>{{produto.title | titlecase}}</p>
-    <p>{{produto.valor | currency:'BRL':symbol:'1.2-2':'pt'}}</p>
+    <p *ngIf="produto.status">{{produto.valor | currency:'BRL':symbol:'1.2-2':'pt'}}</p>
     <a [routerLink]="['/pets-detalhe', produto.id]" >{{produto.status}}</a>
     <img src={{produto.image}} alt="some text" width=60 height=40>
   
