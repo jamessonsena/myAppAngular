@@ -10,7 +10,7 @@ export class ProdutoService
      */
     constructor(private http: HttpClient) {}
 
-    protected UrlServiceV1: string = 'http://localhost:3000;';
+    protected UrlServiceV1: string = 'http://localhost:3000/';
     obterPets() : Observable<Produto[]>{
         return this.http.get<Produto[]>(this.UrlServiceV1+"pets");
     }    

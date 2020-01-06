@@ -10,6 +10,7 @@ import { SobreComponent } from './institucional/sobre/sobre.component';
 import { ContatoComponent } from './institucional/contato/contato.component';
 import { rootRouterConfig } from './app.router';
 import { ProdutoService } from './services/produto.services';
+import { ListaProdutoComponent } from './produtos/lista-produto/lista-produto.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ProdutoService } from './services/produto.services';
     HomeComponent,
     FooterComponent,
     SobreComponent,
-    ContatoComponent  ],
+    ContatoComponent,
+    ListaProdutoComponent  ],
   imports: [
     BrowserModule,
     [RouterModule.forRoot(rootRouterConfig, {useHash:false})]
