@@ -1,7 +1,7 @@
 <div *ngFor="let produto of produtos" >
     <p>{{produto.id}}</p>
     <p>{{produto.title}}</p>
-    <p>{{produto.status}}</p>
+    <a [routerLink]="['/pets-detalhe', produto.id]" >{{produto.status}}</a>
     <img src={{produto.image}} alt="some text" width=60 height=40>
   
 </div>
