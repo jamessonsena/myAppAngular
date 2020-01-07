@@ -3,4 +3,5 @@ export class Produto{
     title:string;
     status:boolean;
     image:string;
+    valor:string;
 }
